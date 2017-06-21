@@ -10,6 +10,18 @@ import java.util.Scanner;
 public class SalesProcessor {
 
 	private HashMap<Integer, SalesPackage> map;
+	/**
+	 * @return the map
+	 */
+	public HashMap<Integer, SalesPackage> getMap() {
+		return map;
+	}
+	/**
+	 * @param map the map to set
+	 */
+	public void setMap(HashMap<Integer, SalesPackage> map) {
+		this.map = map;
+	}
 	private int count = 1;
 	
 	public SalesProcessor(){
