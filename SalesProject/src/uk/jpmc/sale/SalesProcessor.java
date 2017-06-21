@@ -85,7 +85,7 @@ public class SalesProcessor {
 		System.out.println("-----------------------------------------------");
 		Map<String, Double> sorter = getAdjustmentReport();
 		for(String key:sorter.keySet()){
-			System.out.println("|\t"+key+"\t|\t"+sorter.get(key)+"\t|");
+			System.out.println("|\t"+key+"\t\t|\t"+sorter.get(key)+"\t|");
 		}
 	}
 	private Map<String, Double> getAdjustmentReport() {

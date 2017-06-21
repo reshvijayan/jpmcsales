@@ -146,7 +146,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(16, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -154,7 +154,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(17, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -162,7 +162,15 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(18, sp.getMap().size());
+		
+		spkg=new SalesPackage();
+		spkg.setItemReference("Pen");
+		spkg.setUnitPrice(1);
+		spkg.setNumberOfSales(20);
+		spkg.setAdjustmentFactor(0);
+		assertEquals(false, sp.processSale(spkg));
+		assertEquals(19, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -170,7 +178,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(20, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -178,7 +186,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(21, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -186,7 +194,15 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(22, sp.getMap().size());
+		
+		spkg=new SalesPackage();
+		spkg.setItemReference("Pen");
+		spkg.setUnitPrice(1);
+		spkg.setNumberOfSales(30);
+		spkg.setAdjustmentFactor(0);
+		assertEquals(false, sp.processSale(spkg));
+		assertEquals(23, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -194,7 +210,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(24, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -202,7 +218,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(25, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -210,7 +226,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(26, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -218,7 +234,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(27, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -226,7 +242,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(28, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -234,7 +250,15 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(29, sp.getMap().size());
+		
+		spkg=new SalesPackage();
+		spkg.setItemReference("Table");
+		spkg.setUnitPrice(50);
+		spkg.setNumberOfSales(1);
+		spkg.setAdjustmentFactor(2);
+		assertEquals(false, sp.processSale(spkg));
+		assertEquals(30, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -242,7 +266,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(31, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -250,7 +274,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(32, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -258,7 +282,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(33, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -266,7 +290,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(34, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -274,7 +298,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(35, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -282,7 +306,15 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(36, sp.getMap().size());
+		
+		spkg=new SalesPackage();
+		spkg.setItemReference("Table");
+		spkg.setUnitPrice(50);
+		spkg.setNumberOfSales(2);
+		spkg.setAdjustmentFactor(-5);
+		assertEquals(false, sp.processSale(spkg));
+		assertEquals(37, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -290,7 +322,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(38, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -298,7 +330,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(39, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -306,7 +338,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(40, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -314,7 +346,15 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(41, sp.getMap().size());
+		
+		spkg=new SalesPackage();
+		spkg.setItemReference("IronBox");
+		spkg.setUnitPrice(15);
+		spkg.setNumberOfSales(1);
+		spkg.setAdjustmentFactor(-1);
+		assertEquals(false, sp.processSale(spkg));
+		assertEquals(42, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -322,7 +362,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(43, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -330,7 +370,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(44, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -338,7 +378,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(45, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -346,7 +386,7 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(46, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -354,7 +394,15 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(47, sp.getMap().size());
+		
+		spkg=new SalesPackage();
+		spkg.setItemReference("IronBox");
+		spkg.setUnitPrice(20);
+		spkg.setNumberOfSales(10);
+		spkg.setAdjustmentFactor(0);
+		assertEquals(false, sp.processSale(spkg));
+		assertEquals(48, sp.getMap().size());
 		
 		spkg=new SalesPackage();
 		spkg.setItemReference("Apple");
@@ -362,55 +410,15 @@ public class SalesProcessorTest {
 		spkg.setNumberOfSales(3);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(49, sp.getMap().size());
 		
 		spkg=new SalesPackage();
-		spkg.setItemReference("Apple");
-		spkg.setUnitPrice(12);
-		spkg.setNumberOfSales(3);
+		spkg.setItemReference("Bottle");
+		spkg.setUnitPrice(5);
+		spkg.setNumberOfSales(6);
 		spkg.setAdjustmentFactor(0);
 		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
-		
-		spkg=new SalesPackage();
-		spkg.setItemReference("Apple");
-		spkg.setUnitPrice(12);
-		spkg.setNumberOfSales(3);
-		spkg.setAdjustmentFactor(0);
-		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
-		
-		spkg=new SalesPackage();
-		spkg.setItemReference("Apple");
-		spkg.setUnitPrice(12);
-		spkg.setNumberOfSales(3);
-		spkg.setAdjustmentFactor(0);
-		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
-		
-		spkg=new SalesPackage();
-		spkg.setItemReference("Apple");
-		spkg.setUnitPrice(12);
-		spkg.setNumberOfSales(3);
-		spkg.setAdjustmentFactor(0);
-		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
-		
-		spkg=new SalesPackage();
-		spkg.setItemReference("Apple");
-		spkg.setUnitPrice(12);
-		spkg.setNumberOfSales(3);
-		spkg.setAdjustmentFactor(0);
-		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
-		
-		spkg=new SalesPackage();
-		spkg.setItemReference("Apple");
-		spkg.setUnitPrice(12);
-		spkg.setNumberOfSales(3);
-		spkg.setAdjustmentFactor(0);
-		assertEquals(false, sp.processSale(spkg));
-		assertEquals(1, sp.getMap().size());
+		assertEquals(50, sp.getMap().size());
 	}
 
 }
